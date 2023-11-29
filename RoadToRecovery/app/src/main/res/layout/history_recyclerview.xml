@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recHistory"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8sp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E0A8D7">
+
+        <TextView
+            android:id="@+id/startDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="12dp"
+            android:hint="Title"
+            android:textColor="@color/DDV5"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/goalDate"
+            android:layout_width="288dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startDate"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="12dp"
+            android:hint="desc"
+            android:maxLines="1"
+            android:textColor="@color/DDV2"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/endDateHistory"
+            android:layout_width="288dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goalDate"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="12dp"
+            android:hint="@string/end_date"
+            android:maxLines="1"
+            android:textColor="@color/DDV2"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ReasonHistory"
+            android:layout_width="288dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/endDateHistory"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="12dp"
+            android:hint="@string/reason"
+            android:maxLines="1"
+            android:textColor="@color/DDV2"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+

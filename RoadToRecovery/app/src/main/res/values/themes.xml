@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.RoadToRecovery" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/DV5</item>
+        <item name="colorPrimaryVariant">@color/P2</item>
+        <item name="colorOnPrimary">@color/LP3</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/DDV5</item>
+        <item name="colorSecondaryVariant">@color/DDV3</item>
+        <item name="colorOnSecondary">@color/P5</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="Theme.RoadToRecovery.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.RoadToRecovery.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.RoadToRecovery.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

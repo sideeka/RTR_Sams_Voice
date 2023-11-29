@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background4"
+    tools:context="com.samsvoice.roadtorecovery.DiaryEntry">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:padding="20dp"
+
+        app:strokeColor="@color/DDV1"
+        app:cornerRadius="10dp"
+        app:strokeWidth="30dp">
+
+        <TextView
+            android:layout_marginTop="120dp"
+            android:id="@+id/uploadTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="@string/text"
+
+            android:backgroundTint="@color/LLP3"
+            android:background="@drawable/lavender_border"
+            android:padding="16dp"
+            android:textColor="@color/DDV5"
+            />
+
+
+        <EditText
+            android:id="@+id/uploadDesc"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="@color/LLP3"
+            android:background="@drawable/lavender_border"
+            android:gravity="top"
+            android:hint="@string/lets_store_our_memories"
+            android:textSize="15sp"
+            android:padding="16dp"
+            android:singleLine="false"
+            android:textColor="@color/DDV5"
+            android:autofillHints=""
+            tools:ignore="VisualLintTextFieldSize" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/savebutton"
+            android:id="@+id/saveButton"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            app:cornerRadius="20dp"
+
+            tools:ignore="VisualLintButtonSize" />
+    </LinearLayout>
+
+</ScrollView>

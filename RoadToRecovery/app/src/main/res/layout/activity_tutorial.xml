@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LLP4"
+    tools:context="com.samsvoice.roadtorecovery.tutorial">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="ScrollViewSize">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/DDV3"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:title="Tutorial"
+
+                app:titleTextColor="@android:color/white" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/r1"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/lavender_border"
+
+                android:layout_below="@id/toolbar14"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                 <ImageView
+                    android:layout_width="50dp"
+                    android:id="@+id/drawable1"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/baseline_menu_book_24"
+                    android:contentDescription="todo7"></ImageView>
+
+                <TextView
+
+                    android:id="@+id/descMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@id/drawable1"
+                    android:scrollbars="vertical"
+                    android:text="@string/menu"
+                    android:textColor="@color/DDV1"
+                    android:textSize="30sp"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+                <TextView
+
+                    android:text="This represents the three horizontal lines at the left-hand side of the screen. Once selected a side bar will appear which consists of all the pages of the app."
+                    android:textSize="15sp"
+                    android:layout_toEndOf="@id/drawable1"
+                    android:layout_below="@id/descMenu"
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/btMenuDesc"
+                    android:textColor="@color/P5"
+                    ></TextView>
+
+            </RelativeLayout>
+
+            <!-- About -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/r2"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/lavender_border"
+                android:layout_below="@id/r1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:id="@+id/drawable2"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/baseline_info_24"
+                    android:contentDescription="todo8"
+                    tools:ignore="ContentDescription"></ImageView>
+
+                <TextView
+
+                    android:id="@+id/descAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@id/drawable2"
+                    android:scrollbars="vertical"
+                    android:text="@string/about"
+                    android:textColor="@color/DDV1"
+                    android:textSize="30sp"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+                <TextView
+
+                    android:id="@+id/btAboutDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_below="@id/descAbout"
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@id/drawable2"
+                    android:scrollbars="vertical"
+                    android:text="In the about page, you will be displayed a few insights about Sam's Voice Home. Some points may include their mission, programs and so much more."
+                    android:textColor="@color/P5"
+                    android:textSize="15sp"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+            </RelativeLayout>
+
+            <!-- Profile -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:id="@+id/r3"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/lavender_border"
+                android:layout_below="@id/r2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:id="@+id/drawable3"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/baseline_man_24"
+                    android:contentDescription="todo0"></ImageView>
+
+                <TextView
+
+                    android:id="@+id/descTimer"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@id/drawable3"
+                    android:scrollbars="vertical"
+                    android:text="Profile"
+                    android:textColor="@color/DDV1"
+                    android:textSize="30sp"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+                <TextView
+
+                    android:id="@+id/btTimerDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_below="@id/descTimer"
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@id/drawable3"
+                    android:scrollbars="vertical"
+                    android:text="On this page the user is able to see all their points that they have accumulated through out the app from compeleting tasks"
+                    android:textColor="@color/P5"
+                    android:textSize="15sp"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+            </RelativeLayout>
+
+            <!-- Diary -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/r4"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/lavender_border"
+                android:layout_below="@id/r3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:id="@+id/drawable5"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/baseline_menu_book_24"
+                    android:contentDescription="todo12"></ImageView>
+
+                <TextView
+
+                    android:id="@+id/descDiary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@id/drawable5"
+                    android:scrollbars="vertical"
+                    android:text="Diary"
+                    android:textColor="@color/DDV1"
+                    android:textSize="30sp"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+                <TextView
+                    android:id="@+id/btDiaryDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/descDiary"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@id/drawable5"
+                    android:scrollbars="vertical"
+                    android:text="Each user is capable of viewing their diary entries throughout this journey with Sam's Voice, however a user is incapable of deleting or editing their entries."
+                    android:textColor="@color/P5"
+                    android:textSize="15sp"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:id="@+id/drawableCategory"
+                    android:layout_below="@id/drawable5"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginStart="25dp"
+                    android:src="@drawable/baseline_add_24"
+                    android:contentDescription="todo13"></ImageView>
+
+                <TextView
+
+                    android:id="@+id/descDiaryAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@id/drawableCategory"
+                    android:scrollbars="vertical"
+                    android:text="Diary entry"
+                    android:textColor="@color/DDV1"
+                    android:textSize="25sp"
+                    android:layout_below="@id/btDiaryDesc"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+                <TextView
+                    android:id="@+id/btDiaryAddDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/descDiaryAdd"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@id/drawableCategory"
+                    android:scrollbars="vertical"
+                    android:text="On the diary page, a button which appears on the bottom far-right hand corner is designed to add new diary entries."
+                    android:textColor="@color/P5"
+                    android:textSize="15sp"
+                    tools:ignore="TextContrastCheck"></TextView>
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:id="@+id/drawablefilter"
+                    android:layout_below="@id/drawableCategory"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginStart="25dp"
+                    android:src="@drawable/baseline_search_24"
+                    android:contentDescription="todo14"></ImageView>
+
+                <TextView
+
+                    android:text="Filter by Diary date"
+                    android:textSize="25sp"
+                    android:layout_toEndOf="@id/drawablefilter"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:id="@+id/descfilter"
+                    android:textColor="@color/DDV1"
+                    android:scrollbars="vertical"
+                    android:layout_below="@+id/btDiaryAddDesc"
+
+                    ></TextView>
+
+                <TextView
+
+                    android:text="Each user can search up a diary entry based of the dates they have created an entry. The list of entries will filter to those specific dates."
+
+                    android:textSize="15sp"
+                    android:layout_toEndOf="@id/drawablefilter"
+                    android:layout_below="@id/descfilter"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btfilterDesc"
+                    android:textColor="@color/P5"
+                    android:scrollbars="vertical"
+                    ></TextView>
+
+            </RelativeLayout>
+
+            <!-- Goal -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/r5"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/lavender_border"
+                android:layout_below="@id/r4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:id="@+id/drawable6"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/baseline_emoji_events_24"
+                    android:contentDescription="todo12"></ImageView>
+
+                <TextView
+
+                    android:id="@+id/descGoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@id/drawable6"
+                    android:scrollbars="vertical"
+                    android:text="Goal"
+                    android:textColor="@color/DDV1"
+                    android:textSize="30sp"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+                <TextView
+
+                    android:id="@+id/btgoalDesc"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/descGoal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@id/drawable6"
+                    android:scrollbars="vertical"
+                    android:text="Each user can create goals to complete within a specific period. For each goal points are rewarded, but only when a user has completed the goal."
+                    android:textColor="@color/P5"
+                    android:textSize="15sp"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:id="@+id/drawableaddgoal"
+                    android:layout_below="@id/drawable6"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginStart="25dp"
+                    android:src="@drawable/baseline_add_24"
+                    android:contentDescription="todo13"></ImageView>
+
+                <TextView
+
+                    android:id="@+id/descgoalAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@id/drawablefiltergoal"
+                    android:scrollbars="vertical"
+                    android:text="Goal entry"
+                    android:textColor="@color/DDV1"
+                    android:textSize="25sp"
+                    android:layout_below="@id/btgoalDesc"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+                <TextView
+
+                    android:id="@+id/btgoalAddDesc"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/descgoalAdd"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@id/drawableaddgoal"
+                    android:scrollbars="vertical"
+                    android:text="On the goal page, a button which appears on the bottom far-right hand corner is designed to add new goal entries. A user is required to enter the start and end date as well as the start and end time of the goal, with a title for desciption"
+                    android:textColor="@color/P5"
+                    tools:ignore="TextContrastCheck"></TextView>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:id="@+id/drawablefiltergoal"
+                    android:layout_below="@id/drawableaddgoal"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="75dp"
+                    android:layout_marginStart="25dp"
+                    android:src="@drawable/baseline_search_24"
+                    android:contentDescription="todo14"></ImageView>
+
+                <TextView
+
+                    android:text="filter_by_category"
+                    android:textSize="25sp"
+                    android:layout_toEndOf="@id/drawablefiltergoal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:id="@+id/descfiltergoal"
+                    android:textColor="@color/DDV1"
+                    android:scrollbars="vertical"
+                    android:layout_below="@+id/btgoalAddDesc"
+
+                    ></TextView>
+
+                <TextView
+                    android:text="A user can search up goal entries based of the titles of the goal"
+                    android:textSize="15sp"
+                    android:layout_toEndOf="@id/drawablefiltergoal"
+                    android:layout_below="@id/descfiltergoal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btfilterDescgoal"
+                    android:textColor="@color/P5"
+                    android:scrollbars="vertical"
+                    ></TextView>
+
+            </RelativeLayout>
+
+            <!-- to do list -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:id="@+id/r6"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/lavender_border"
+                android:layout_below="@id/r5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:id="@+id/drawable7"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/baseline_checklist_24"
+                    android:contentDescription="todo12"></ImageView>
+
+                <TextView
+
+                    android:id="@+id/descToDoList"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@id/drawable7"
+                    android:scrollbars="vertical"
+                    android:text="To Do List"
+                    android:textColor="@color/DDV1"
+                    android:textSize="30sp"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+                <TextView
+
+                    android:id="@+id/btToDoListDesc"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/descToDoList"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@id/drawable7"
+                    android:scrollbars="vertical"
+                    android:text="This will direct you to a page where you will see your todo list tasks, both completed and not.You can easily tap on an entry and edit whether the task is completed or not. You have a week to complete a task. The faster you complete a task the more points you will get"
+                    android:textColor="@color/V3"
+                    android:textSize="15sp"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:id="@+id/drawableaddToDoList"
+                    android:layout_below="@id/drawable7"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginStart="25dp"
+                    android:src="@drawable/baseline_add_24"
+                    android:contentDescription="todo13"></ImageView>
+
+                <TextView
+
+                    android:id="@+id/descToDoListAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@id/drawableaddToDoList"
+                    android:scrollbars="vertical"
+                    android:text="To Do List entry"
+                    android:textColor="@color/DDV1"
+                    android:textSize="25sp"
+                    android:layout_below="@id/btToDoListDesc"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+                <TextView
+
+                    android:id="@+id/btToDoListAddDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/descToDoListAdd"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@id/drawableaddToDoList"
+                    android:scrollbars="vertical"
+                    android:text=" By clicking on the add entry button in the bottom right corner, a small form will pop up from the bottom of the screen. On this form you will enter the name of the task and a description. After doing this, you will click on the  save button and your task will be added to your list of tasks."
+                    android:textColor="@color/P5"
+                    android:textSize="15sp"
+                    tools:ignore="TextContrastCheck"
+                    android:layout_marginBottom="20dp"></TextView>
+
+
+
+            </RelativeLayout>
+
+            <!-- Sober Clock -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/r7"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/lavender_border"
+                android:layout_below="@id/r6"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:id="@+id/drawable8"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/baseline_emoji_events_24"
+                    android:contentDescription="todo12"></ImageView>
+
+                <TextView
+
+                    android:id="@+id/descSoberClock"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@id/drawable8"
+                    android:scrollbars="vertical"
+                    android:text="Sober Clock"
+                    android:textColor="@color/DDV1"
+                    android:textSize="30sp"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+                <TextView
+                    android:id="@+id/btSoberClockDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/descSoberClock"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@id/drawable8"
+                    android:scrollbars="vertical"
+                    android:text="This will direct you to the sober clock page where you will find your previously set sober clock timer with the count down to your goal date or by default will show 'Countdown'"
+                    android:textColor="@color/P5"
+                    android:textSize="15sp"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:id="@+id/drawableaddSoberClock"
+                    android:layout_below="@id/drawable8"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginStart="25dp"
+                    android:src="@drawable/baseline_add_24"
+                    android:contentDescription="todo13"></ImageView>
+
+                <TextView
+
+                    android:id="@+id/descSoberClockAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@id/drawablefilterSoberclock"
+                    android:scrollbars="vertical"
+                    android:text="Set the Time"
+                    android:textColor="@color/DDV1"
+                    android:textSize="25sp"
+                    android:layout_below="@id/btSoberClockDesc"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+                <TextView
+                    android:id="@+id/btSoberClockAddDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/descSoberClockAdd"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toEndOf="@id/drawableaddSoberClock"
+                    android:scrollbars="vertical"
+                    android:text=" By clicking on the add entry button in the bottom right corner, a small form will pop up from the bottom of the screen. On this form you will choose your goal date of staying sober. After doing this, you will click on the  save button and your timer on the page will begin counting down."
+                    android:textColor="@color/P5"
+                    tools:ignore="TextContrastCheck"></TextView>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:id="@+id/drawablefilterSoberclock"
+                    android:layout_below="@id/drawableaddSoberClock"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginStart="25dp"
+                    android:src="@drawable/baseline_checklist_24"
+                    android:contentDescription="todo14"></ImageView>
+
+                <TextView
+
+                    android:text="Sober Clock History"
+                    android:textSize="25sp"
+                    android:layout_toEndOf="@id/drawablefilterSoberclock"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/descfilterSoberClock"
+                    android:textColor="@color/DDV1"
+                    android:scrollbars="vertical"
+                    android:layout_below="@+id/btSoberClockAddDesc"
+
+                    ></TextView>
+
+                <TextView
+
+                    android:text="This is next to the add button(bottom right corner) This will direct the user to a new page that will show all their previous sober clock timers and whether they have completed them."
+                    android:textSize="15sp"
+                    android:layout_toEndOf="@id/drawablefilterSoberclock"
+                    android:layout_below="@id/descfilterSoberClock"
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btfilterDescSoberClock"
+                    android:textColor="@color/P5"
+                    android:scrollbars="vertical"
+                    android:layout_marginBottom="10dp"
+                    ></TextView>
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:id="@+id/drawableCancelSoberclock"
+                    android:layout_below="@id/drawablefilterSoberclock"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginStart="25dp"
+                    android:src="@drawable/baseline_close_24"
+                    android:contentDescription="todo14"></ImageView>
+
+                <TextView
+
+                    android:text="Cancel Sober Clock Timer"
+                    android:textSize="25sp"
+                    android:layout_toEndOf="@id/drawablefilterSoberclock"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/descCancelSoberClock"
+                    android:textColor="@color/DDV1"
+                    android:scrollbars="vertical"
+                    android:layout_below="@+id/btfilterDescSoberClock"
+
+                    ></TextView>
+
+                <TextView
+
+                    android:text="This is next to the add button(bottom right corner) This will direct the user to a new page that will show all their previous sober clock timers and whether they have completed them."
+                    android:textSize="15sp"
+                    android:layout_toEndOf="@id/drawablefilterSoberclock"
+                    android:layout_below="@id/descCancelSoberClock"
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/btCancelDescSoberClock"
+                    android:textColor="@color/P5"
+                    android:scrollbars="vertical"
+                    ></TextView>
+
+            </RelativeLayout>
+
+            </RelativeLayout>
+        <!--</RelativeLayout>-->
+
+    </ScrollView>

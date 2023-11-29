@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "249833512639",
+    "project_id": "roadtorecovery-30d9e",
+    "storage_bucket": "roadtorecovery-30d9e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249833512639:android:7e065731f225683201700a",
+        "android_client_info": {
+          "package_name": "com.samsvoice.roadtorecovery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsl4kXtEpHsq-zFeBf9DslpynV_ZBSwlM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

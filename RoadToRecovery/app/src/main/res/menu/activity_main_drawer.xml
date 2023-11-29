@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+       <!-- <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" />-->
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_About"
+            android:icon="@drawable/baseline_info_24"
+            android:title="@string/about"/>
+
+        <item
+            android:id="@+id/nav_Tutorial"
+            android:icon="@drawable/baseline_question_mark_24"
+            android:title="Tutorial"/>
+
+        <item
+            android:id="@+id/nav_Diary"
+            android:icon="@drawable/baseline_menu_book_24"
+            android:title="@string/diary" />
+        <item
+            android:id="@+id/nav_Goals"
+            android:icon="@drawable/baseline_emoji_events_24"
+            android:title="@string/goals" />
+        <item
+            android:id="@+id/nav_ToDoList"
+            android:icon="@drawable/baseline_checklist_24"
+            android:title="@string/todo_list" />
+
+
+        <!-- <item
+             android:id="@+id/nav_Logout"
+             android:icon="@drawable/baseline_logout_24"
+             android:title="Logout" />-->
+
+        <item
+            android:id="@+id/nav_SoberClock"
+            android:icon="@drawable/baseline_access_alarm_24"
+            android:title="@string/sober_clock" />
+
+
+        <!--  <item
+              android:id="@+id/nav_Login"
+              android:icon="@drawable/baseline_login_24"
+              android:title="@string/login" />-->
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/baseline_man_24"
+            android:title="@string/profile" />
+
+    </group>
+</menu>

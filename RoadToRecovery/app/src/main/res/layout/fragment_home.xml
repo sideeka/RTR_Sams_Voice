@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homebg"
+    tools:context="com.samsvoice.roadtorecovery.ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.334" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/homefab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="#310940"
+        android:src="@drawable/baseline_home_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profilefab"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_home"
+        app:layout_constraintVertical_bias="0.227"
+        app:tint="@color/white"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/profilefab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#744370"
+        android:src="@drawable/baseline_man_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Tutorialfab"
+        app:layout_constraintStart_toEndOf="@+id/homefab"
+        app:layout_constraintTop_toBottomOf="@+id/text_home"
+        app:layout_constraintVertical_bias="0.227"
+        app:tint="@color/white"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/Tutorialfab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#744370"
+        android:src="@drawable/baseline_question_mark_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profilefab"
+        app:layout_constraintTop_toBottomOf="@+id/text_home"
+        app:layout_constraintVertical_bias="0.227"
+        app:tint="@color/white"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:layout_marginBottom="10sp"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/adminfab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:backgroundTint="#744370"
+        android:src="@drawable/baseline_admin_panel_settings_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        app:tint="@color/white"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.213">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="430dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/lavender_border"
+                android:backgroundTint="@color/DDV5">
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:text="Diary enteries"
+                    android:textColor="@color/LLP1"
+                    android:textSize="30dp" />
+
+                <ImageButton
+                    android:id="@+id/DiaryButton"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="15dp"
+                    android:backgroundTint="#744370"
+                    android:src="@drawable/baseline_menu_book_24"
+                    android:text="Number 2"
+                    android:textSize="30dp"
+                    app:tint="@color/white"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/lavender_border"
+                android:backgroundTint="@color/DDV5">
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:text="Goals"
+                    android:textColor="@color/LLP1"
+                    android:textSize="30dp" />
+
+                <ImageButton
+                    android:id="@+id/GoalsButton"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="15dp"
+                    android:backgroundTint="#744370"
+                    android:src="@drawable/baseline_emoji_events_24"
+                    android:text="Number 2"
+                    android:textSize="30dp"
+                    app:tint="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/lavender_border"
+                android:backgroundTint="@color/DDV5">
+
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:text="To Do List"
+                    android:textColor="@color/LLP1"
+                    android:textSize="30dp" />
+
+                <ImageButton
+                    android:id="@+id/ToDoListButton"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="15dp"
+                    android:backgroundTint="#744370"
+                    android:src="@drawable/baseline_checklist_24"
+                    android:text="Number 2"
+                    android:textSize="30dp"
+                    app:tint="@color/white"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/lavender_border"
+                android:backgroundTint="@color/DDV5">
+
+                <TextView
+                    android:id="@+id/txt4"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:text="@string/sober_clock"
+                    android:textColor="@color/LLP1"
+                    android:textSize="30dp" />
+
+                <ImageButton
+                    android:id="@+id/SoberClockButton"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="15dp"
+                    android:backgroundTint="#744370"
+                    android:src="@drawable/baseline_access_alarm_24"
+                    android:text="Number 2"
+                    android:textSize="30dp"
+
+                    app:tint="@color/white"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homefab"
+        app:layout_constraintVertical_bias="0.201">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="68dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homefab">
+
+        <TextView
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="skdjalsdjlasjdlasjdl"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/one2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="skdjalsdjlasjdlasjdl"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/one3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="skdjalsdjlasjdlasjdl"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/one4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="skdjalsdjlasjdlasjdl"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/one6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="skdjalsdjlasjdlasjdl"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/one5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="skdjalsdjlasjdlasjdl"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/one1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="skdjalsdjlasjdlasjdl"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/one8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sideeka"
+            android:textSize="40sp" />
+
+    </LinearLayout>-->
+
+    <!--</ScrollView>-->
+</androidx.constraintlayout.widget.ConstraintLayout>
